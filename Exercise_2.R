@@ -3,6 +3,7 @@ library(tidyverse)
 #0: Load the data in RStudio
 titanic_original <- read_csv("titanic_original.csv")
 
+
 titanic_clean <- titanic_original %>%
   mutate(
     #1: Port of embarkation
@@ -14,6 +15,7 @@ titanic_clean <- titanic_original %>%
     #4 Cabin
     has_cabin_number = ifelse(cabin == "", 0, 1)
   )
+
 
 #5 Submit the project on Github
 write.csv(titanic_clean, file = "titanic_clean_csv", row.names = FALSE)
