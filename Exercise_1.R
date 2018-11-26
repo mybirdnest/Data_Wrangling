@@ -1,6 +1,5 @@
 library(tidyverse)
 
-
 #0: Load the data in RStudio
 refine_original <- read_csv("refine_original.csv")
 
