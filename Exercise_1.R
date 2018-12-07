@@ -45,4 +45,4 @@ refine_clean <- refine_clean %>%
   )
 
 #6: Submit the project on Github
-write.csv(refine_clean, file = "refine_clean.csv", row.names = FALSE)
+write_csv(refine_clean, file = "refine_clean.csv", row.names = FALSE)

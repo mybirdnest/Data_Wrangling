@@ -18,4 +18,4 @@ titanic_clean <- titanic_original %>%
 
 
 #5 Submit the project on Github
-write.csv(titanic_clean, file = "titanic_clean_csv", row.names = FALSE)
+write_csv(titanic_clean, file = "titanic_clean_csv", row.names = FALSE)
