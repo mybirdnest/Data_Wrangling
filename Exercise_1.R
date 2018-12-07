@@ -14,7 +14,7 @@ refine_clean <-
   mutate(company = ifelse(
     substr(company, 1, 1) == "u", "unilever", company)) %>%
   mutate(company = ifelse(
-    substr(.$company, 1, 1) == "v", "van houten", company))
+    substr(company, 1, 1) == "v", "van houten", company))
 
 #2: Separate product code and number
 refine_clean <- refine_clean %>% separate('Product code / number', c("product_code", "product_number"), sep = "-")
